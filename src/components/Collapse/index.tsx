@@ -30,7 +30,7 @@ export const Collapse: React.FC<Props> = ({
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
-          className={clsx('h-6 w-6 absolute right-6 duration-500', { 'rotate-180': !open })}
+          className={clsx('h-6 w-6 absolute right-6 duration-200', { 'rotate-180': !open })}
           fill="currentColor"
           onClick={handleToggle}
         >

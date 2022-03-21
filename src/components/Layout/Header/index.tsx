@@ -25,7 +25,7 @@ export const Header: React.FC<Props> = ({ currentPage }) => {
         <nav className="flex-2 space-x-4">
           {ROUTE_WITHOUT_HOME_VALUE.map(route => (
             <Link key={route.name} href={route.href} passHref>
-              <span className="underline underline-offset-2">{route.name}</span>
+              <span className="underline underline-offset-2 cursor-pointer">{route.name}</span>
             </Link>
           ))}
         </nav>

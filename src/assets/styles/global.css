@@ -1,9 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 html,
 body {
   @apply bg-background text-text scroll-smooth;
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-family: 'Dancing Script', cursive;
 }
