@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import router from 'next/router'
 import clsx from 'clsx'
 import { useScrollTrigger } from '@/src/hooks/useScrollTrigger'
 import { WINDOW } from '@/src/constants/client'
@@ -11,9 +10,6 @@ type Props = {
 
 export const Header: React.FC<Props> = ({ currentPage }) => {
   const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 0, target: WINDOW })
-  const handleClickLogo = () => {
-    router.push(HOME_ROUTE_VALUE.href)
-  }
   return (
     <div className="h-16">
       <header
@@ -22,7 +18,9 @@ export const Header: React.FC<Props> = ({ currentPage }) => {
           trigger && ['shadow-md']
         )}
       >
-        <div className="flex-1">Alfredo & Esther Wedding</div>
+        <div className="flex-1">
+          <Link href={HOME_ROUTE_VALUE.href}>Alfredo & Esther Wedding</Link>
+        </div>
         <nav className="flex-2 space-x-4">
           {ROUTE_WITHOUT_HOME_VALUE.map(route => (
             <Link key={route.name} href={route.href} passHref>
