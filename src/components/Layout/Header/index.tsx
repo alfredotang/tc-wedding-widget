@@ -1,11 +1,9 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import router from 'next/router'
 import clsx from 'clsx'
 import { useScrollTrigger } from '@/src/hooks/useScrollTrigger'
 import { WINDOW } from '@/src/constants/client'
 import { ROUTE_WITHOUT_HOME_VALUE, HOME_ROUTE_VALUE } from '@/src/constants/config'
-import Logo from '@/src/assets/images/logo.png'
 
 type Props = {
   currentPage: string
@@ -24,20 +22,13 @@ export const Header: React.FC<Props> = ({ currentPage }) => {
           trigger && ['shadow-md']
         )}
       >
-        <div className="flex-1">
-          <Image
-            src={Logo}
-            alt="tc_drawn"
-            priority
-            height={50}
-            width={91}
-            onClick={handleClickLogo}
-          />
-        </div>
+        <div className="flex-1">Alfredo & Esther Wedding</div>
         <nav className="flex-2 space-x-4">
           {ROUTE_WITHOUT_HOME_VALUE.map(route => (
             <Link key={route.name} href={route.href} passHref>
-              <span className="underline underline-offset-2 cursor-pointer">{route.name}</span>
+              <span className="underline underline-offset-2 cursor-pointer">
+                {route.name.toUpperCase()}
+              </span>
             </Link>
           ))}
         </nav>

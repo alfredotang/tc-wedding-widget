@@ -9,7 +9,7 @@ type TableItem = {
 type TableList = {
   id: string
   tableName: string
-  tableId: string
+  tableId: number
   category: string
   tableItem: TableItem[]
   peopleCount: number

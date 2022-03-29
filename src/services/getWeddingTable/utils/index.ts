@@ -41,7 +41,7 @@ const mapTableState = (data: any[]): TableState => {
     return {
       id: nanoid(),
       tableName,
-      tableId,
+      tableId: Number(tableId),
       category,
       tableItem,
       peopleCount: tableItem.length,
