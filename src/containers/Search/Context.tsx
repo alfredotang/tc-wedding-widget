@@ -1,5 +1,5 @@
 import type { Dispatch } from 'react'
-import { createContext, useReducer } from 'react'
+import { createContext, useReducer, useMemo } from 'react'
 import { produce, createDraft } from 'immer'
 import { pinyin } from 'pinyin-pro'
 
@@ -83,7 +83,11 @@ type Props = {
   tableState: TableState
 }
 export const SearchProvider: React.FC<Props> = ({ children, tableState }) => {
-  const { reducer, initialState } = makeContext(tableState)
+  const { reducer, initialState } = useMemo(
+    () => makeContext(tableState),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [JSON.stringify(tableState)]
+  )
   const [state, dispatch] = useReducer(reducer, initialState)
   return <SearchContext.Provider value={{ state, dispatch }}>{children}</SearchContext.Provider>
 }

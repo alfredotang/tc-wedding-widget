@@ -10,7 +10,7 @@ export const SearchContainer: React.FC = () => {
     <div className="flex flex-col justify-center items-center space-y-8 p-4 md:p-10 ">
       <Filter />
       <Status />
-      <section className="flex flex-wrap">
+      <section className="flex flex-wrap w-full">
         {state.tableState.map(item => (
           <TableList key={item.id} {...item} />
         ))}

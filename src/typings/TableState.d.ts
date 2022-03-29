@@ -8,9 +8,9 @@ type TableItem = {
 
 type TableList = {
   id: string
-  tableName: any
-  tableId: any
-  category: any
+  tableName: string
+  tableId: string
+  category: string
   tableItem: TableItem[]
   peopleCount: number
   babyCount: number

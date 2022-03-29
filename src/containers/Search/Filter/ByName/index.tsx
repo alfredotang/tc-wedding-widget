@@ -1,5 +1,5 @@
 import type { CompositionEvent } from 'react'
-import { useContext, useRef, useEffect } from 'react'
+import { useContext, useRef, useEffect, useMemo, useCallback } from 'react'
 import { SearchContext } from '@/src/containers/Search/Context'
 
 export const ByName: React.FC = () => {
@@ -47,7 +47,7 @@ export const ByName: React.FC = () => {
         </svg>
       </span>
       <input
-        className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-pink-100 focus:ring-pink-100 focus:ring-1 sm:text-sm"
+        className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none  sm:text-sm"
         placeholder="Search name"
         type="text"
         name="search"

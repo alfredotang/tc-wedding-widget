@@ -9,7 +9,10 @@ export const Button: React.FC<Props> = ({ children, onClick, className = '' }) =
   return (
     <button
       onClick={onClick}
-      className={clsx(className, 'rounded bg-background text-text shadow-md p-2 text-center')}
+      className={clsx(
+        className,
+        'bg-white text-text px-4 py-1 text-center border border-slate-300 rounded-md hover:shadow-lg h-[38px]'
+      )}
     >
       {children}
     </button>
