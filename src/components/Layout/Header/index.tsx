@@ -1,9 +1,11 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import router from 'next/router'
 import clsx from 'clsx'
 import { useScrollTrigger } from '@/src/hooks/useScrollTrigger'
 import { WINDOW } from '@/src/constants/client'
-import { BASE_TITLE } from '@/src/constants/seo'
 import { ROUTE_WITHOUT_HOME_VALUE, HOME_ROUTE_VALUE } from '@/src/constants/config'
+import Logo from '@/src/assets/images/logo.png'
 
 type Props = {
   currentPage: string
@@ -11,6 +13,9 @@ type Props = {
 
 export const Header: React.FC<Props> = ({ currentPage }) => {
   const trigger = useScrollTrigger({ disableHysteresis: true, threshold: 0, target: WINDOW })
+  const handleClickLogo = () => {
+    router.push(HOME_ROUTE_VALUE.href)
+  }
   return (
     <div className="h-16">
       <header
@@ -20,7 +25,14 @@ export const Header: React.FC<Props> = ({ currentPage }) => {
         )}
       >
         <div className="flex-1">
-          <Link href={HOME_ROUTE_VALUE.href}>{BASE_TITLE}</Link>
+          <Image
+            src={Logo}
+            alt="tc_drawn"
+            priority
+            height={50}
+            width={91}
+            onClick={handleClickLogo}
+          />
         </div>
         <nav className="flex-2 space-x-4">
           {ROUTE_WITHOUT_HOME_VALUE.map(route => (

@@ -1,6 +1,6 @@
 import { useContext, useMemo } from 'react'
 import { StatusList } from '@/src/containers/Search/Status/StatusList'
-import { Collapse } from '@/src/components/Collapse'
+import { Collapse, CollapseTitle, CollapseBody } from '@/src/components/Collapse'
 import { SearchContext } from '@/src/containers/Search/Context'
 import { getTotalCount, getBabyList, getNotSureList } from '@/src/containers/Search/Status/utils'
 
@@ -29,12 +29,15 @@ export const Status: React.FC = () => {
 
   return useMemo(() => {
     return (
-      <Collapse title={`Total: ${totalCount}`}>
-        <div className="flex">
-          {renderList({ babeList, notSureList }).map(item => (
-            <StatusList key={item.title} source={item.source} title={item.title} />
-          ))}
-        </div>
+      <Collapse defaultOpen={false}>
+        <CollapseTitle>{`Total: ${totalCount}`}</CollapseTitle>
+        <CollapseBody>
+          <div className="flex">
+            {renderList({ babeList, notSureList }).map(item => (
+              <StatusList key={item.title} source={item.source} title={item.title} />
+            ))}
+          </div>
+        </CollapseBody>
       </Collapse>
     )
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -18,7 +18,7 @@ export const StatusList: React.FC<Props> = ({ source, title }) => {
 
   return useMemo(() => {
     return (
-      <div className="w-[160px] h-[200px] space-y-3">
+      <div className="space-y-3 p-4">
         <h2 className="text-md">
           {title}: {source.length}
         </h2>

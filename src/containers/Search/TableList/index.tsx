@@ -19,7 +19,7 @@ export const TableList: React.FC<Props> = ({
   babyCount,
 }) => {
   return (
-    <div className="w-[160px] mb-8">
+    <div className="mb-8 p-4 mx-2 shadow-md w-full rounded hover:shadow-xl md:w-[156px]">
       <div className="space-y-4 mb-6">
         <h1 className="text-lg">Table: {tableId}</h1>
         <h2 className="text-md">{tableName}</h2>
