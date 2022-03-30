@@ -1,4 +1,7 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
+import uniqBy from 'lodash/fp/uniqBy'
+import pipe from 'lodash/fp/pipe'
+import map from 'lodash/fp/map'
 import { SearchContext } from '@/src/containers/Search/Context'
 
 export const ByCategory: React.FC = () => {
@@ -8,6 +11,11 @@ export const ByCategory: React.FC = () => {
     dispatch({ type: 'SEARCH_BY_CATEGORY', payload: event.target.value })
   }
 
+  const categories = pipe(
+    map(({ category, id }: TableList) => ({ category, id })),
+    uniqBy(item => item.category)
+  )(state.tableStateDraft)
+
   return (
     <div>
       <select
@@ -16,7 +24,7 @@ export const ByCategory: React.FC = () => {
         value={state.category}
       >
         <option value="">Search by category</option>
-        {state.tableStateDraft.map(item => (
+        {categories.map(item => (
           <option key={item.id} value={item.category}>
             {item.category}
           </option>
