@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import dateTime from '@/src/helpers/dateTime'
-import TCDrawnImage from '@/src/assets/images/tc_drawn.png'
+import TCDrawnImage from '@/src/assets/images/tc_drawn_without_date.png'
 import Logo from '@/src/assets/images/logo.png'
 import InvitationCardASide from '@/src/assets/images/invitation_card_a_side.jpg'
 import InvitationCardBSide from '@/src/assets/images/invitation_card_b_side.jpg'
@@ -13,16 +13,16 @@ export const HomeContainer: React.FC = () => {
         <div>
           <Image src={Logo} alt="log" priority layout="responsive" />
         </div>
-        <h1 className="text-xl">Welcome to our wedding</h1>
-        <h2 className="text-lg">{dateTime(WEDDING_TIME).format('YYYY.MM.DD dddd HH:mm A')}</h2>
-        <h2>
+        <h2 className="text-xl">Welcome to our wedding</h2>
+        <h2 className="text-xl">{dateTime(WEDDING_TIME).format('YYYY.MM.DD dddd HH:mm A')}</h2>
+        <h2 className="text-xl">
           <a
             className="underline underline-offset-2"
             href={LOCATION_LINK}
             target="_blank"
             rel="noreferrer"
           >
-            台北晶華酒店 4F 萬象廳
+            台北晶華酒店 四樓萬象廳
           </a>
         </h2>
       </section>
