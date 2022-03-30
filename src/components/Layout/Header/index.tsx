@@ -19,7 +19,7 @@ export const Header: React.FC<Props> = ({ currentPage }) => {
         )}
       >
         <div className="flex-1">
-          <Link href={HOME_ROUTE_VALUE.href}>Alfredo & Esther Wedding</Link>
+          <Link href={HOME_ROUTE_VALUE.href}>Alfredo & Esther&apos;s Wedding</Link>
         </div>
         <nav className="flex-2 space-x-4">
           {ROUTE_WITHOUT_HOME_VALUE.map(route => (
