@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import { Tag } from '@/src/components/Tag'
 
 type Props = TableList
@@ -18,8 +19,16 @@ export const TableList: React.FC<Props> = ({
   peopleCount,
   babyCount,
 }) => {
+  const router = useRouter()
+  const handleClick = () => {
+    router.push(`/search/${tableId}`)
+  }
+
   return (
-    <div className="mb-8 p-4 mx-2 shadow-md w-full rounded hover:shadow-xl md:w-[156px]">
+    <div
+      className="mb-8 p-4 mx-2 shadow-md w-full rounded hover:shadow-xl md:w-[156px] hover:cursor-pointer"
+      onClick={handleClick}
+    >
       <div className="space-y-4 mb-6">
         <h1 className="text-lg">Table: {tableId}</h1>
         <h2 className="text-md">{tableName}</h2>

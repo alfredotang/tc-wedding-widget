@@ -1,0 +1,44 @@
+.select {
+  @apply italic h-11 overflow-hidden text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-4 pr-4 shadow-sm focus:outline-none  sm:text-sm hover:cursor-pointer;
+  @apply flex justify-center items-center relative shadow-lg hover:shadow-xl;
+}
+
+.list {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-tap-highlight-color: transparent;
+  overflow-y: auto;
+  @apply z-40 flex flex-col fixed backdrop-blur-sm p-6 box-border space-y-6;
+}
+
+.bottom {
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.top {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.right {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100% !important;
+  max-height: 100% !important;
+}
+
+.left {
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  height: 100% !important;
+  max-height: 100% !important;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}

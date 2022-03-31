@@ -11,7 +11,7 @@ export const Button: React.FC<Props> = ({ children, onClick, className = '' }) =
       onClick={onClick}
       className={clsx(
         className,
-        'bg-white text-text px-4 py-1 text-center border border-slate-300 rounded-md hover:shadow-lg h-[38px]'
+        'bg-white h-11 text-text px-4 py-1 text-center border border-slate-300 rounded-md shadow-lg hover:shadow-xl'
       )}
     >
       {children}

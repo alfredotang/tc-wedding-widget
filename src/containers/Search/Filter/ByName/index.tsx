@@ -30,7 +30,7 @@ export const ByName: React.FC = () => {
   }, [state.searchTarget])
 
   return (
-    <label className="relative block">
+    <label className="relative block shadow-lg hover:shadow-xl">
       <span className="sr-only">Search</span>
       <span className="absolute inset-y-0 left-0 flex items-center pl-2">
         <svg
@@ -47,7 +47,7 @@ export const ByName: React.FC = () => {
         </svg>
       </span>
       <input
-        className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none  sm:text-sm"
+        className="h-11 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none  sm:text-sm"
         placeholder="Search name"
         type="text"
         name="search"

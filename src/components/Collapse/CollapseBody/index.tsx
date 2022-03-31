@@ -1,4 +1,3 @@
-import clsx from 'clsx'
 import { motion, AnimatePresence } from 'framer-motion'
 
 type Props = {

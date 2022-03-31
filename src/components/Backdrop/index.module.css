@@ -1,0 +1,13 @@
+.backdrop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-tap-highlight-color: transparent;
+  @apply z-30;
+}
