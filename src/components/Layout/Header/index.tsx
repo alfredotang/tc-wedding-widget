@@ -14,7 +14,7 @@ export const Header: React.FC<Props> = ({ currentPage }) => {
     <div className="h-16">
       <header
         className={clsx(
-          'fixed h-16 w-full bg-background flex justify-center items-center box-border z-10 px-5',
+          'fixed h-16 w-full bg-background flex justify-center items-center box-border z-20 px-5',
           trigger && ['shadow-md']
         )}
       >

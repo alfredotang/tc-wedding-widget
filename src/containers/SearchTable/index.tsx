@@ -8,11 +8,11 @@ export const SearchTableContainer: React.FC = () => {
   useEffect(() => {
     if (typeof document !== 'undefined' && query.table) {
       const element = document.querySelector(`#table-${query.table}`)
-      element?.classList.add('animate-bounce', 'bg-pink-400')
+      element?.classList.add(classes.target)
     }
   }, [query.table])
   return (
-    <div className={clsx(`flex flex-col justify-center  space-y-5`, classes.searchTable)}>
+    <div className={clsx(`flex flex-col justify-center space-y-5`, classes.searchTable)}>
       <section className="flex justify">
         <article className="flex">
           <div className="flex flex-col">
