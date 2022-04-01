@@ -81,7 +81,7 @@ export const SearchTableContainer: React.FC = () => {
           </div>
         </article>
       </section>
-      <section className="bg-purple-500 w-full text-center rounded-md">走到</section>
+      <section className="bg-purple-500 w-full text-center rounded-md">走道</section>
       <section className="flex space-x-5">
         <article className="flex flex-col justify-center items-center">
           <div className="flex">
