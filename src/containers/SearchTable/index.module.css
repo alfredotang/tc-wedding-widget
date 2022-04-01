@@ -1,5 +1,5 @@
 .searchTable p {
-  @apply w-8 h-8 rounded-full flex justify-center items-center m-2;
+  @apply w-8 h-8 rounded-full flex justify-center items-center m-2 bg-blue-400;
   @apply sm:m-3 sm:w-10 sm:h-10;
   @apply md:m-4 md:w-16 md:h-16;
   @apply lg:m-5 lg:w-20 lg:h-20;

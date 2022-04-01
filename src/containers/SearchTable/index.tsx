@@ -16,68 +16,36 @@ export const SearchTableContainer: React.FC = () => {
       <section className="flex justify">
         <article className="flex">
           <div className="flex flex-col">
-            <p className="bg-blue-500" id="table-14">
-              14
-            </p>
-            <p className="bg-blue-500" id="table-16">
-              16
-            </p>
-            <p className="bg-blue-500" id="table-18">
-              18
-            </p>
+            <p id="table-14">14</p>
+            <p id="table-16">16</p>
+            <p id="table-18">18</p>
           </div>
           <div className="flex flex-col">
-            <p className="bg-blue-500" id="table-8">
-              8
-            </p>
-            <p className="bg-blue-500" id="table-10">
-              10
-            </p>
-            <p className="bg-blue-500" id="table-12">
-              12
-            </p>
+            <p id="table-8">8</p>
+            <p id="table-10">10</p>
+            <p id="table-12">12</p>
           </div>
           <div className="flex flex-col items-center ">
-            <p className="bg-blue-500" id="table-2">
-              2
-            </p>
-            <p className="bg-blue-500" id="table-6">
-              6
-            </p>
+            <p id="table-2">2</p>
+            <p id="table-6">6</p>
           </div>
         </article>
         <article className="flex items-center">
-          <p className="bg-blue-500" id="table-0">
-            主桌
-          </p>
+          <p id="table-0">主桌</p>
         </article>
         <article className="flex">
           <div className="flex flex-col">
-            <p className="bg-blue-500" id="table-1">
-              1
-            </p>
-            <p className="bg-blue-500" id="table-3">
-              3
-            </p>
+            <p id="table-1">1</p>
+            <p id="table-3">3</p>
           </div>
           <div className="flex flex-col">
-            <p className="bg-blue-500" id="table-5">
-              5
-            </p>
-            <p className="bg-blue-500" id="table-7">
-              7
-            </p>
-            <p className="bg-blue-500" id="table-9">
-              9
-            </p>
+            <p id="table-5">5</p>
+            <p id="table-7">7</p>
+            <p id="table-9">9</p>
           </div>
           <div className="flex flex-col">
-            <p className="bg-blue-500" id="table-11">
-              11
-            </p>
-            <p className="bg-blue-500" id="table-13">
-              13
-            </p>
+            <p id="table-11">11</p>
+            <p id="table-13">13</p>
           </div>
         </article>
       </section>
@@ -85,29 +53,17 @@ export const SearchTableContainer: React.FC = () => {
       <section className="flex space-x-5">
         <article className="flex flex-col justify-center items-center">
           <div className="flex">
-            <p className="bg-blue-500" id="table-15">
-              15
-            </p>
-            <p className="bg-blue-500" id="table-17">
-              17
-            </p>
+            <p id="table-15">15</p>
+            <p id="table-17">17</p>
           </div>
-          <p className="bg-blue-500" id="table-19">
-            19
-          </p>
+          <p id="table-19">19</p>
         </article>
         <article className="flex flex-col justify-center items-center">
           <div className="flex">
-            <p className="bg-blue-500" id="table-20">
-              20
-            </p>
-            <p className="bg-blue-500" id="table-21">
-              21
-            </p>
+            <p id="table-20">20</p>
+            <p id="table-21">21</p>
           </div>
-          <p className="bg-blue-500" id="table-22">
-            22
-          </p>
+          <p id="table-22">22</p>
         </article>
       </section>
     </div>

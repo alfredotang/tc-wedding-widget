@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import dateTime from '@/src/helpers/dateTime'
-import TCDrawnImage from '@/src/assets/images/tc_drawn_without_date.png'
+import TCDrawnImage from '@/src/assets/images/tc_drawn.png'
 import Logo from '@/src/assets/images/logo.png'
 import InvitationCardASide from '@/src/assets/images/invitation_card_a_side.jpg'
 import InvitationCardBSide from '@/src/assets/images/invitation_card_b_side.jpg'
