@@ -5,5 +5,8 @@
   },
   "editor.quickSuggestions": {
     "strings": true
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
   }
 }
